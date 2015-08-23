@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A0334F11B897BA100F1CF30 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A0334EF1B897BA100F1CF30 /* Info.plist */; };
 		1A4692D01B8985A000810352 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AA1B8985A000810352 /* alloc.c */; };
 		1A4692D11B8985A000810352 /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AB1B8985A000810352 /* base64-decode.c */; };
 		1A4692D21B8985A000810352 /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AC1B8985A000810352 /* client-handshake.c */; };
@@ -21,7 +20,6 @@
 		1A4692DA1B8985A000810352 /* extension-deflate-stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B41B8985A000810352 /* extension-deflate-stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692DB1B8985A000810352 /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B51B8985A000810352 /* extension.c */; };
 		1A4692DC1B8985A000810352 /* getifaddrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B61B8985A000810352 /* getifaddrs.c */; };
-		1A4692DD1B8985A000810352 /* getifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B71B8985A000810352 /* getifaddrs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692DE1B8985A000810352 /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B81B8985A000810352 /* handshake.c */; };
 		1A4692DF1B8985A000810352 /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B91B8985A000810352 /* header.c */; };
 		1A4692E01B8985A000810352 /* hpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692BA1B8985A000810352 /* hpack.c */; };
@@ -44,12 +42,13 @@
 		1A4692F11B8985A000810352 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CB1B8985A000810352 /* server.c */; };
 		1A4692F21B8985A000810352 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CC1B8985A000810352 /* service.c */; };
 		1A4692F31B8985A000810352 /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CD1B8985A000810352 /* sha-1.c */; };
-		1A4692F41B8985A000810352 /* ssl-http2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CE1B8985A000810352 /* ssl-http2.c */; };
 		1A4692F51B8985A000810352 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CF1B8985A000810352 /* ssl.c */; };
+		1A4692F81B8991F100810352 /* lws_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692F71B8991F100810352 /* lws_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A4692F91B8997A300810352 /* getifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B71B8985A000810352 /* getifaddrs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A0334E41B897B8400F1CF30 /* WebSockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebSockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0334E41B897B8400F1CF30 /* libwebsockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libwebsockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0334EF1B897BA100F1CF30 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		1A4692AA1B8985A000810352 /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alloc.c; path = ../lib/alloc.c; sourceTree = "<group>"; };
 		1A4692AB1B8985A000810352 /* base64-decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "base64-decode.c"; path = "../lib/base64-decode.c"; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		1A4692CD1B8985A000810352 /* sha-1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "sha-1.c"; path = "../lib/sha-1.c"; sourceTree = "<group>"; };
 		1A4692CE1B8985A000810352 /* ssl-http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "ssl-http2.c"; path = "../lib/ssl-http2.c"; sourceTree = "<group>"; };
 		1A4692CF1B8985A000810352 /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ssl.c; path = ../lib/ssl.c; sourceTree = "<group>"; };
+		1A4692F71B8991F100810352 /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lws_config.h; path = ../lws_config.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 		1A0334E51B897B8400F1CF30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A0334E41B897B8400F1CF30 /* WebSockets.framework */,
+				1A0334E41B897B8400F1CF30 /* libwebsockets.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +130,7 @@
 		1A4692F61B8985A800810352 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1A4692F71B8991F100810352 /* lws_config.h */,
 				1A4692AA1B8985A000810352 /* alloc.c */,
 				1A4692AB1B8985A000810352 /* base64-decode.c */,
 				1A4692AC1B8985A000810352 /* client-handshake.c */,
@@ -184,9 +185,10 @@
 				1A4692DA1B8985A000810352 /* extension-deflate-stream.h in Headers */,
 				1A4692D81B8985A000810352 /* extension-deflate-frame.h in Headers */,
 				1A4692E41B8985A000810352 /* lextable.h in Headers */,
-				1A4692DD1B8985A000810352 /* getifaddrs.h in Headers */,
 				1A4692E21B8985A000810352 /* huftable.h in Headers */,
+				1A4692F81B8991F100810352 /* lws_config.h in Headers */,
 				1A4692EF1B8985A000810352 /* private-libwebsockets.h in Headers */,
+				1A4692F91B8997A300810352 /* getifaddrs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +210,7 @@
 			);
 			name = "libwebsockets OS X";
 			productName = libwebsockets;
-			productReference = 1A0334E41B897B8400F1CF30 /* WebSockets.framework */;
+			productReference = 1A0334E41B897B8400F1CF30 /* libwebsockets.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0334F11B897BA100F1CF30 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +265,6 @@
 				1A4692F01B8985A000810352 /* server-handshake.c in Sources */,
 				1A4692E81B8985A000810352 /* lws-plat-unix.c in Sources */,
 				1A4692DC1B8985A000810352 /* getifaddrs.c in Sources */,
-				1A4692F41B8985A000810352 /* ssl-http2.c in Sources */,
 				1A4692F31B8985A000810352 /* sha-1.c in Sources */,
 				1A4692EB1B8985A000810352 /* minilex.c in Sources */,
 				1A4692D91B8985A000810352 /* extension-deflate-stream.c in Sources */,
@@ -391,7 +391,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libwebsockets.libwebsockets;
-				PRODUCT_NAME = WebSockets;
+				PRODUCT_NAME = libwebsockets;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -409,7 +409,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libwebsockets.libwebsockets;
-				PRODUCT_NAME = WebSockets;
+				PRODUCT_NAME = libwebsockets;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
