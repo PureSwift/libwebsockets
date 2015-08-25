@@ -45,6 +45,8 @@
 		1A4692F51B8985A000810352 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CF1B8985A000810352 /* ssl.c */; };
 		1A4692F81B8991F100810352 /* lws_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692F71B8991F100810352 /* lws_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692F91B8997A300810352 /* getifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B71B8985A000810352 /* getifaddrs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A86184A1B8A574C002A0E9D /* libcrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8618491B8A574C002A0E9D /* libcrypto.tbd */; };
+		1A86184D1B8A6983002A0E9D /* ssl-http2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CE1B8985A000810352 /* ssl-http2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,7 @@
 		1A4692CE1B8985A000810352 /* ssl-http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "ssl-http2.c"; path = "../lib/ssl-http2.c"; sourceTree = "<group>"; };
 		1A4692CF1B8985A000810352 /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ssl.c; path = ../lib/ssl.c; sourceTree = "<group>"; };
 		1A4692F71B8991F100810352 /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lws_config.h; path = ../lws_config.h; sourceTree = "<group>"; };
+		1A8618491B8A574C002A0E9D /* libcrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcrypto.tbd; path = usr/lib/libcrypto.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A86184A1B8A574C002A0E9D /* libcrypto.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +109,7 @@
 		1A0334DA1B897B8400F1CF30 = {
 			isa = PBXGroup;
 			children = (
+				1A86184B1B8A5754002A0E9D /* Dependencies */,
 				1A4692F61B8985A800810352 /* Source */,
 				1A0334E61B897B8400F1CF30 /* libwebsockets */,
 				1A0334E51B897B8400F1CF30 /* Products */,
@@ -171,6 +176,22 @@
 				1A4692CF1B8985A000810352 /* ssl.c */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		1A86184B1B8A5754002A0E9D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				1A86184C1B8A575D002A0E9D /* OS X */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		1A86184C1B8A575D002A0E9D /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1A8618491B8A574C002A0E9D /* libcrypto.tbd */,
+			);
+			name = "OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +295,7 @@
 				1A4692EE1B8985A000810352 /* pollfd.c in Sources */,
 				1A4692D31B8985A000810352 /* client-parser.c in Sources */,
 				1A4692D21B8985A000810352 /* client-handshake.c in Sources */,
+				1A86184D1B8A6983002A0E9D /* ssl-http2.c in Sources */,
 				1A4692DE1B8985A000810352 /* handshake.c in Sources */,
 				1A4692E11B8985A000810352 /* http2.c in Sources */,
 				1A4692EC1B8985A000810352 /* output.c in Sources */,
@@ -390,6 +412,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libwebsockets.libwebsockets;
 				PRODUCT_NAME = libwebsockets;
 				SKIP_INSTALL = YES;
@@ -408,6 +431,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = org.libwebsockets.libwebsockets;
 				PRODUCT_NAME = libwebsockets;
 				SKIP_INSTALL = YES;

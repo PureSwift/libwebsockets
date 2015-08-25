@@ -35,7 +35,7 @@
 /* #undef LWS_USE_IPV6 */
 
 /* Build with support for HTTP2 */
-/* #undef LWS_USE_HTTP2 */
+#define LWS_USE_HTTP2
 
 /* Turn on latency measuring code */
 /* #undef LWS_LATENCY */
@@ -164,7 +164,7 @@
 /* #undef size_t */
 
 /* Define to 1 if we have getifaddrs */
-#define HAVE_GETIFADDRS
+#define HAVE_GETIFADDRS 1
 
 /* Define as `fork' if `vfork' does not work. */
 /* #undef vfork */
