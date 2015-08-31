@@ -153,8 +153,7 @@
 #include <cyassl/openssl/ssl.h>
 #include <cyassl/error-ssl.h>
 #else
-#include 
-<openssl/ssl.h>
+#include <openssl/ssl.h>
 #include <openssl/evp.h>
 #include <openssl/err.h>
 #include <openssl/md5.h>
