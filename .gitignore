@@ -39,3 +39,5 @@ libwebsockets.pc
 
 Xcode/libwebsockets.xcodeproj/project.xcworkspace/xcuserdata/*
 Xcode/libwebsockets.xcodeproj/xcuserdata/*
+
+Carthage/*

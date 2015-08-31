@@ -13,7 +13,6 @@
 		1A4692D31B8985A000810352 /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AD1B8985A000810352 /* client-parser.c */; };
 		1A4692D41B8985A000810352 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AE1B8985A000810352 /* client.c */; };
 		1A4692D51B8985A000810352 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692AF1B8985A000810352 /* context.c */; };
-		1A4692D61B8985A000810352 /* daemonize.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B01B8985A000810352 /* daemonize.c */; };
 		1A4692D71B8985A000810352 /* extension-deflate-frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B11B8985A000810352 /* extension-deflate-frame.c */; };
 		1A4692D81B8985A000810352 /* extension-deflate-frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B21B8985A000810352 /* extension-deflate-frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692D91B8985A000810352 /* extension-deflate-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692B31B8985A000810352 /* extension-deflate-stream.c */; };
@@ -27,11 +26,9 @@
 		1A4692E21B8985A000810352 /* huftable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692BC1B8985A000810352 /* huftable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692E31B8985A000810352 /* lextable-strings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692BD1B8985A000810352 /* lextable-strings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692E41B8985A000810352 /* lextable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692BE1B8985A000810352 /* lextable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A4692E51B8985A000810352 /* libev.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692BF1B8985A000810352 /* libev.c */; };
 		1A4692E61B8985A000810352 /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C01B8985A000810352 /* libwebsockets.c */; };
 		1A4692E71B8985A000810352 /* libwebsockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692C11B8985A000810352 /* libwebsockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692E81B8985A000810352 /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C21B8985A000810352 /* lws-plat-unix.c */; };
-		1A4692E91B8985A000810352 /* lws-plat-win.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C31B8985A000810352 /* lws-plat-win.c */; };
 		1A4692EA1B8985A000810352 /* minihuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C41B8985A000810352 /* minihuf.c */; };
 		1A4692EB1B8985A000810352 /* minilex.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C51B8985A000810352 /* minilex.c */; };
 		1A4692EC1B8985A000810352 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692C61B8985A000810352 /* output.c */; };
@@ -45,7 +42,6 @@
 		1A4692F51B8985A000810352 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CF1B8985A000810352 /* ssl.c */; };
 		1A4692F81B8991F100810352 /* lws_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692F71B8991F100810352 /* lws_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A4692F91B8997A300810352 /* getifaddrs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4692B71B8985A000810352 /* getifaddrs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A86184A1B8A574C002A0E9D /* libcrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8618491B8A574C002A0E9D /* libcrypto.tbd */; };
 		1A86184D1B8A6983002A0E9D /* ssl-http2.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4692CE1B8985A000810352 /* ssl-http2.c */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +87,7 @@
 		1A4692CE1B8985A000810352 /* ssl-http2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "ssl-http2.c"; path = "../lib/ssl-http2.c"; sourceTree = "<group>"; };
 		1A4692CF1B8985A000810352 /* ssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ssl.c; path = ../lib/ssl.c; sourceTree = "<group>"; };
 		1A4692F71B8991F100810352 /* lws_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lws_config.h; path = ../lws_config.h; sourceTree = "<group>"; };
-		1A8618491B8A574C002A0E9D /* libcrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcrypto.tbd; path = usr/lib/libcrypto.tbd; sourceTree = SDKROOT; };
+		1A7520331B8DC893005A67E0 /* libwebsockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebsockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +95,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A86184A1B8A574C002A0E9D /* libcrypto.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7520301B8DC892005A67E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +111,6 @@
 		1A0334DA1B897B8400F1CF30 = {
 			isa = PBXGroup;
 			children = (
-				1A86184B1B8A5754002A0E9D /* Dependencies */,
 				1A4692F61B8985A800810352 /* Source */,
 				1A0334E61B897B8400F1CF30 /* libwebsockets */,
 				1A0334E51B897B8400F1CF30 /* Products */,
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0334E41B897B8400F1CF30 /* libwebsockets.framework */,
+				1A7520331B8DC893005A67E0 /* libwebsockets.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,22 +180,6 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
-		1A86184B1B8A5754002A0E9D /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				1A86184C1B8A575D002A0E9D /* OS X */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		1A86184C1B8A575D002A0E9D /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				1A8618491B8A574C002A0E9D /* libcrypto.tbd */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -210,6 +196,13 @@
 				1A4692F81B8991F100810352 /* lws_config.h in Headers */,
 				1A4692EF1B8985A000810352 /* private-libwebsockets.h in Headers */,
 				1A4692F91B8997A300810352 /* getifaddrs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7520311B8DC892005A67E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +227,24 @@
 			productReference = 1A0334E41B897B8400F1CF30 /* libwebsockets.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1A7520321B8DC892005A67E0 /* websockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7520341B8DC893005A67E0 /* Build configuration list for PBXNativeTarget "websockets" */;
+			buildPhases = (
+				1A7520371B8DC89B005A67E0 /* Compile Make */,
+				1A75202F1B8DC892005A67E0 /* Sources */,
+				1A7520301B8DC892005A67E0 /* Frameworks */,
+				1A7520311B8DC892005A67E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = websockets;
+			productName = libwebsockets;
+			productReference = 1A7520331B8DC893005A67E0 /* libwebsockets.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +255,9 @@
 				ORGANIZATIONNAME = libwebsockets;
 				TargetAttributes = {
 					1A0334E31B897B8400F1CF30 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					1A7520321B8DC892005A67E0 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -261,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				1A0334E31B897B8400F1CF30 /* libwebsockets OS X */,
+				1A7520321B8DC892005A67E0 /* websockets */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +289,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7520371B8DC89B005A67E0 /* Compile Make */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Make";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##cd ../\n##cmake ..\n##make\n\nset | grep ARCH\nset -x\n\n## Determine the appropriate openssl source path to use\n## Introduced by michaeltyson, adapted to account for OPENSSL_SRC build path\n\n# locate src archive file if present\nSRC_ARCHIVE=`ls openssl*tar.gz 2>/dev/null`\n\n# if there is an openssl directory immediately under the openssl.xcode source\n# folder then build there\nif [ -d \"$SRCROOT/openssl\" ]; then\nOPENSSL_SRC=\"$SRCROOT/openssl\"\n# else, if there is a openssl.tar.gz in the directory, expand it to openssl\n# and use it\nelif [ -f \"$SRC_ARCHIVE\" ]; then\nOPENSSL_SRC=\"$PROJECT_TEMP_DIR/openssl\"\nif [ ! -d \"$OPENSSL_SRC\" ]; then\necho \"extracting $SRC_ARCHIVE...\"\nmkdir \"$OPENSSL_SRC\"\ntar -C \"$OPENSSL_SRC\" --strip-components=1 -zxf \"$SRC_ARCHIVE\" || exit 1\ncp -RL \"$OPENSSL_SRC/include\" \"$TARGET_BUILD_DIR\"\nfi\n# else, if $OPENSSL_SRC is not already defined (i.e. by prerequisites for SQLCipher XCode config)\n# then assume openssl is in the current directory\nelif [ ! -d \"$OPENSSL_SRC\" ]; then\nOPENSSL_SRC=\"$SRCROOT\"\nfi\n\necho \"***** using $OPENSSL_SRC for openssl source code  *****\"\n\n# check whether libcrypto.a already exists - we'll only build if it does not\nif [ -f  \"$TARGET_BUILD_DIR/libcrypto.a\" ]; then\necho \"***** Using previously-built libary $TARGET_BUILD_DIR/libcrypto.a - skipping build *****\"\necho \"***** To force a rebuild clean project and clean dependencies *****\"\nexit 0;\nelse\necho \"***** No previously-built libary present at $TARGET_BUILD_DIR/libcrypto.a - performing build *****\"\nfi\n\n# figure out the right set of build architectures for this run\nBUILDARCHS=\"$ARCHS\"\n\necho \"***** creating universal binary for architectures: $BUILDARCHS *****\"\n\nif [ \"$SDKROOT\" != \"\" ]; then\nISYSROOT=\"-isysroot $SDKROOT\"\nfi\n\necho \"***** using ISYSROOT $ISYSROOT *****\"\n\nOPENSSL_OPTIONS=\"no-krb5 no-gost\"\n\necho \"***** using OPENSSL_OPTIONS $OPENSSL_OPTIONS *****\"\n\ncd \"$OPENSSL_SRC\"\n\nfor BUILDARCH in $BUILDARCHS\ndo\necho \"***** BUILDING UNIVERSAL ARCH $BUILDARCH ******\"\nmake clean\n\n# disable assembler\necho \"***** configuring WITHOUT assembler optimizations based on architecture $BUILDARCH and build style $BUILD_STYLE *****\"\n./config no-asm $OPENSSL_OPTIONS -openssldir=\"$BUILD_DIR\"\nASM_DEF=\"-UOPENSSL_BN_ASM_PART_WORDS\"\n\nmake CFLAG=\"-D_DARWIN_C_SOURCE $ASM_DEF -arch $BUILDARCH $ISYSROOT -Wno-unused-value -Wno-parentheses\" SHARED_LDFLAGS=\"-arch $BUILDARCH -dynamiclib\"\n\necho \"***** copying intermediate libraries to $CONFIGURATION_TEMP_DIR/$BUILDARCH-*.a *****\"\ncp libcrypto.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libcrypto.a\ncp libssl.a \"$CONFIGURATION_TEMP_DIR\"/$BUILDARCH-libssl.a\ndone\n\necho \"***** creating universallibraries in $TARGET_BUILD_DIR *****\"\nmkdir -p \"$TARGET_BUILD_DIR\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a -output \"$TARGET_BUILD_DIR/libcrypto.a\"\nlipo -create \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a -output \"$TARGET_BUILD_DIR/libssl.a\"\n\necho \"***** removing temporary files from $CONFIGURATION_TEMP_DIR *****\"\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libcrypto.a\nrm -f \"$CONFIGURATION_TEMP_DIR/\"*-libssl.a\n\necho \"***** executing ranlib on libraries in $TARGET_BUILD_DIR *****\"\nranlib \"$TARGET_BUILD_DIR/libcrypto.a\"\nranlib \"$TARGET_BUILD_DIR/libssl.a\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A0334DF1B897B8400F1CF30 /* Sources */ = {
@@ -291,7 +323,6 @@
 				1A4692D91B8985A000810352 /* extension-deflate-stream.c in Sources */,
 				1A4692E01B8985A000810352 /* hpack.c in Sources */,
 				1A4692E61B8985A000810352 /* libwebsockets.c in Sources */,
-				1A4692E91B8985A000810352 /* lws-plat-win.c in Sources */,
 				1A4692EE1B8985A000810352 /* pollfd.c in Sources */,
 				1A4692D31B8985A000810352 /* client-parser.c in Sources */,
 				1A4692D21B8985A000810352 /* client-handshake.c in Sources */,
@@ -299,7 +330,6 @@
 				1A4692DE1B8985A000810352 /* handshake.c in Sources */,
 				1A4692E11B8985A000810352 /* http2.c in Sources */,
 				1A4692EC1B8985A000810352 /* output.c in Sources */,
-				1A4692E51B8985A000810352 /* libev.c in Sources */,
 				1A4692D51B8985A000810352 /* context.c in Sources */,
 				1A4692F21B8985A000810352 /* service.c in Sources */,
 				1A4692D41B8985A000810352 /* client.c in Sources */,
@@ -309,7 +339,13 @@
 				1A4692ED1B8985A000810352 /* parsers.c in Sources */,
 				1A4692EA1B8985A000810352 /* minihuf.c in Sources */,
 				1A4692F11B8985A000810352 /* server.c in Sources */,
-				1A4692D61B8985A000810352 /* daemonize.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A75202F1B8DC892005A67E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +474,28 @@
 			};
 			name = Release;
 		};
+		1A7520351B8DC893005A67E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		1A7520361B8DC893005A67E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "-lcrypto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,6 +516,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1A7520341B8DC893005A67E0 /* Build configuration list for PBXNativeTarget "websockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7520351B8DC893005A67E0 /* Debug */,
+				1A7520361B8DC893005A67E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
