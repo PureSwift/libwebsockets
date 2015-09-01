@@ -120,7 +120,7 @@ lws_context_init_server_ssl(struct lws_context_creation_info *info,
 	 * tlsv1.2. Unwanted versions must be disabled using SSL_CTX_set_options()
 	 */
 
-	method = (SSL_METHOD *)SSLv23_server_method();
+	method = (SSL_METHOD *)TLSv1_2_server_method();
 	if (!method) {
 		error = ERR_get_error();
 		lwsl_err("problem creating ssl method %lu: %s\n", 
@@ -289,7 +289,7 @@ int lws_context_init_client_ssl(struct lws_context_creation_info *info,
 	OpenSSL_add_all_algorithms();
 	SSL_load_error_strings();
 
-	method = (SSL_METHOD *)SSLv23_client_method();
+	method = (SSL_METHOD *)TLSv1_2_client_method();
 	if (!method) {
 		error = ERR_get_error();
 		lwsl_err("problem creating ssl method %lu: %s\n",
